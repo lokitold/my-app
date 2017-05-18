@@ -5,7 +5,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-scripts": "0.9.5"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
@@ -17,6 +18,6 @@
     "eject": "react-scripts eject"
   },
   "engines": {
-    "node": "6.10.2"
+    "node": "6.10.2",
   }
 }
