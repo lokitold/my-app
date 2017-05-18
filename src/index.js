@@ -4,6 +4,6 @@ import List from './Components/List';
 import './index.css';
 
 ReactDOM.render(
-  <List />,
+  <List name="sara" />,
   document.getElementById('root')
 );
