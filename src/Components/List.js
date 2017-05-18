@@ -6,6 +6,7 @@ class List extends Component {
       <ul>
           <li>uno</li>
           <li>dos</li>
+          <li>tres</li>
       </ul>
     );
   }
