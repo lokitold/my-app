@@ -27,7 +27,7 @@ class List extends Component {
 
 
     render() {
-
+        console.log('render');
         var namesList = this.state.names.map(function (name) {
             return <li key={name}>{name}</li>;
         });
