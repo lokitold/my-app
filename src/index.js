@@ -34,6 +34,7 @@ const Header = () => (
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/roster'>Roster</Link></li>
                 <li><Link to='/schedule'>Schedule</Link></li>
+                <li><Link to='/list'>List</Link></li>
             </ul>
         </nav>
     </header>
@@ -45,6 +46,7 @@ const Main = () => (
             <Route exact path='/' component={Home}/>
             <Route path='/roster' component={Roster}/>
             <Route path='/schedule' component={Schedule}/>
+            <Route path='/list' component={() => (<List name="Sara" />)}/>
         </Switch>
     </main>
 )
@@ -62,11 +64,4 @@ ReactDOM.render((
     <BrowserRouter>
         <App />
     </BrowserRouter>
-), document.getElementById('root2'));
-
-
-ReactDOM.render((
-    <BrowserRouter>
-        <List name="sara" />
-    </BrowserRouter>
-    ), document.getElementById('root'));
+), document.getElementById('root'));
