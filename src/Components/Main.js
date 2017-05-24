@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import List from './List';
+import BasicExamle from './BasicExample';
 import { Switch,Route } from 'react-router-dom'
 
 const Home = () => (
@@ -33,6 +34,7 @@ class Main extends Component {
                     <Route exact path='/' component={Home}/>
                     <Route path='/roster' component={Roster}/>
                     <Route path='/schedule' component={Schedule}/>
+                    <Route path='/basic-example-route' component={BasicExamle}/>
                     <Route path='/list' component={() => (<List name="Sara" />)}/>
                 </Switch>
             </main>
