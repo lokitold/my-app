@@ -30,6 +30,7 @@ class Main extends Component {
     render() {
         return (
             <main>
+                <hr/>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/roster' component={Roster}/>
