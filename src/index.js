@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Main from './Components/Main';
 import './index.css';
 import { BrowserRouter,Link } from 'react-router-dom'
+import registerServiceWorker from './registerServiceWorker';
 
 const Header = () => (
     <header>
@@ -30,3 +31,4 @@ ReactDOM.render((
         <App />
     </BrowserRouter>
 ), document.getElementById('root'));
+registerServiceWorker();
