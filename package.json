@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.15.3",
+    "jade": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
