@@ -10,12 +10,24 @@ app.set('view engine', 'jade');
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 app.get('/dynamic', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!'});
+
+	var image = [
+		'',
+		'',
+		'',
+		'',
+		'',
+		'',
+	]
+	
+    res.render('index', { image: 'Hey', message: 'Hello there!'});
+});
+
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(app.get('port'));
