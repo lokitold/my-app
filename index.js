@@ -18,7 +18,7 @@ app.get('/dynamic', function (req, res) {
 	  return Math.random() * (max - min) + min;
 	}
 
-	var number = random(1,31241);
+	var number = parseInt(random(1,31241));
 
 	image = url + number + '.jpg';
 
