@@ -13,16 +13,16 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/dynamic', function (req, res) {
 
-	var image = [
-		'',
-		'',
-		'',
-		'',
-		'',
-		'',
-	]
-	
-    res.render('index', { image: 'Hey', message: 'Hello there!'});
+	var url = "http://wowcrush.com/images/"
+	var random = function (min, max) {
+	  return Math.random() * (max - min) + min;
+	}
+
+	var number = random(1,31241);
+
+	image = url + number + '.jpg';
+
+    res.render('index', { image: image, message: 'Hello there!'});
 });
 
 
