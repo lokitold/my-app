@@ -28,7 +28,8 @@ app.get('/dynamic', function (req, res) {
         'http://wowcrush.com/images/656436.jpg',
         'http://wowcrush.com/images/684020.jpg',
         'http://wowcrush.com/images/182168.jpg',
-        'http://wowcrush.com/images/267959.jpg'
+        'http://wowcrush.com/images/267959.jpg',
+        'http://wowcrush.com/images/541048.jpg'
     ];
 
     var rand = image[Math.floor(Math.random() * image.length)];
