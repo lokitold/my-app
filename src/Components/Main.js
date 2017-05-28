@@ -25,6 +25,22 @@ const Schedule = () => (
     </div>
 )
 
+const Status = ({ code, children }) => (
+    <Route render={({ staticContext }) => {
+    if (staticContext)
+      staticContext.status = code
+    return children
+  }}/>
+)
+
+const NotFound = () => (
+    <Status code={404}>
+        <div>
+            <h1>Sorry, can’t find that.</h1>
+        </div>
+    </Status>
+)
+
 class Main extends Component {
 
     render() {
@@ -37,6 +53,7 @@ class Main extends Component {
                     <Route path='/schedule' component={Schedule}/>
                     <Route path='/basic-example-route' component={BasicExamle}/>
                     <Route path='/list' component={() => (<List name="Sara" />)}/>
+                    <Route component={NotFound}/>
                 </Switch>
             </main>
         );
