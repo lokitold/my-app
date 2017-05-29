@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import List from './List';
 import BasicExamle from './BasicExample';
-import { Switch,Route } from 'react-router-dom'
+import { Switch,Route } from 'react-router-dom';
+import '../css/menu.css';
 
 const Home = () => (
-    <div>
+    <div className="margen">
         <h1>Welcome to the Tornadoes Website!</h1>
     </div>
 )
@@ -45,8 +46,7 @@ class Main extends Component {
 
     render() {
         return (
-            <main>
-                <hr/>
+            <main className="right">
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/roster' component={Roster}/>

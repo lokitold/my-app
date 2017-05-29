@@ -1,0 +1,24 @@
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+
+.left {
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    outline: 1px solid;
+}
+
+.right {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+
+.margen {
+    padding-left: 50px;
+}
