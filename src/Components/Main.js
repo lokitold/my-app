@@ -10,8 +10,12 @@ const Home = () => (
     </div>
 )
 
+const divStyle = {
+    margin : '10px'
+};
+
 const Roster = () => (
-    <div>
+    <div style ={divStyle} >
         <h1>Welcome to Roster</h1>
     </div>
 )

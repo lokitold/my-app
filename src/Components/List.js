@@ -12,7 +12,8 @@ class List extends Component {
         };
     }
 
-    componentDidMount() {
+    componentWillMount() {
+        console.log('componentWillMount');
         axios.get('https://m7s0kugbb6.execute-api.us-east-1.amazonaws.com/dev/todos')
             .then(response => {
                 this.setState({
